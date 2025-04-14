@@ -14,6 +14,7 @@ import Link from "next/link";
 import { sidebarLinks } from "@/constants";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import Footer from "./Footer";
 
 const MobileNav = ({ user }: MobileNavProps) => {
 	const pathname = usePathname();
@@ -38,11 +39,11 @@ const MobileNav = ({ user }: MobileNavProps) => {
 							src="/icons/logo.svg"
 							width={34}
 							height={34}
-							alt="Orion Logo"
+							alt="Horizon Logo"
 							className="size-[24px] max-xl:size-14"
 						/>
 						<h1 className="text-26 font-ibm-plex-serif font-bold text-black-1">
-							Orion
+							Horizon
 						</h1>
 					</Link>
 					<div className="mobilenav-sheet">
@@ -87,7 +88,7 @@ const MobileNav = ({ user }: MobileNavProps) => {
 								USER
 							</nav>
 						</SheetClose>
-						FOOTER
+						<Footer user={user} type="mobile" />
 					</div>
 				</SheetContent>
 			</Sheet>
