@@ -21,8 +21,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: "Orion",
-	description: "Orion is a moder banking platform for everyone.",
+	title: "Horizon",
+	description: "Horizon is a moder banking platform for everyone.",
 	icons: "/icons/logo.svg",
 };
 
